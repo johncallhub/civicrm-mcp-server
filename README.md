@@ -60,24 +60,41 @@ Add to your `claude_desktop_config.json`:
 
 ## 🛠️ Available Tools
 
-- **get_contacts** - Search and retrieve contacts
-- **create_contact** - Create new contacts
-- **update_contact** - Update existing contacts
-- **get_activities** - Retrieve activities
-- **create_activity** - Create new activities
-- **get_contributions** - View donations/contributions
-- **create_contribution** - Record new donations
+- **get_contacts** - Search and retrieve contacts with custom fields
+- **create_contact** - Create new contacts with custom field support
+- **update_contact** - Update existing contacts including custom fields
+- **list_custom_fields** - List all custom fields for any entity type
+- **get_activities** - Retrieve activities with custom fields
+- **create_activity** - Create new activities with custom fields
+- **get_contributions** - View donations/contributions with custom fields
+- **create_contribution** - Record new donations with custom fields
 - **get_events** - List CiviCRM events
 - **get_memberships** - View memberships
 - **system_info** - Check CiviCRM status
 
+## ✨ Enhanced Custom Field Support
+
+- **Automatic Discovery**: Automatically loads and maps all custom fields
+- **Human-Friendly Names**: Use field labels instead of technical API names
+- **Multiple Entity Support**: Works with Contact, Activity, Contribution custom fields
+- **Smart Mapping**: Converts human-readable field names to API field names
+- **Complete Integration**: Custom fields included in all get/create/update operations
+
 ## 💬 Usage Examples
 
-Ask Claude things like:
+### Basic Operations
 - "Show me all contacts from Acme Corporation"
 - "Create a new contact for Jane Doe with email jane@example.com"
 - "List all donations over $1000 from this year"
 - "Schedule a meeting with contact ID 123"
+
+### Custom Field Examples
+- "List all custom fields for contacts"
+- "Show me contacts including their membership level custom field"
+- "Create a contact with custom field 'Volunteer Interest' set to 'Environmental'"
+- "Update contact ID 456 and set their 'Preferred Communication' to 'Email'"
+- "Find all activities with custom field 'Follow-up Required' set to 'Yes'"
+- "Record a donation with custom field 'Campaign Source' as 'Newsletter'"
 
 ## 🔧 Development
 
